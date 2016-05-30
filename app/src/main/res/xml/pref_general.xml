@@ -1,0 +1,60 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="@string/key_loop_switch"
+        android:summary="@string/pref_description_enable_looping"
+        android:title="@string/pref_title_enable_looping" />
+
+    <SwitchPreference
+        android:defaultValue="false"
+        android:key="@string/key_minimize_pause"
+        android:title="@string/pref_title_minimize_pause"/>
+
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="@string/key_headset_pause"
+        android:title="@string/pref_title_headset_pause"/>
+
+
+
+    <!-- NOTE: Hide buttons to simplify the UI. Users can touch outside the dialog to
+         dismiss it. -->
+    <!-- NOTE: ListPreference's summary should be set to its value by the activity code. -->
+    <ListPreference
+        android:defaultValue="0"
+        android:entries="@array/pref_sort_list_titles"
+        android:entryValues="@array/pref_sort_list_values"
+        android:summary="Album"
+        android:key="@string/key_song_sort_list"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"
+        android:title="@string/pref_title_sort_songs" />
+
+    <!-- NOTE: EditTextPreference accepts EditText attributes. -->
+    <!-- NOTE: EditTextPreference's summary should be set to its value by the activity code. -->
+    <EditTextPreference
+        android:defaultValue="@string/pref_default_backup_fileName"
+        android:inputType="textFilter"
+        android:key="@string/key_backup_dialog"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:enabled="false"
+        android:clickable="false"
+        android:title="@string/pref_backup_title" />
+
+    <com.example.sammirzaei.smartshuffle.ResetRatingsPreference
+        android:title="@string/reset_ratings_title"
+        />
+
+    <Preference
+        android:title="@string/pref_version_title"
+        android:summary="@string/pref_version_summary"
+        android:selectable="false"
+        />
+
+
+</PreferenceScreen>

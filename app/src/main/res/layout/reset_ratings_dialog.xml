@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/abc_dialog_padding_material"
+        android:paddingRight="@dimen/abc_dialog_padding_material"
+        android:paddingTop="@dimen/abc_dialog_padding_top_material"
+        android:textColor="@android:color/background_dark"
+        android:textSize="@dimen/abc_text_size_body_1_material"
+        android:text="@string/reset_ratings_dialog_text"/>
+</LinearLayout>

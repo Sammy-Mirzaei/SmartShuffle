@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">SmartShuffle</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_quit">Quit</string>
+    <string name="action_songs">Songs</string>
+    <string name="title_activity_songs">Songs</string>
+
+    <!-- Strings related to Settings -->
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- General settings -->
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_title_enable_looping">Enable looping</string>
+    <string name="pref_description_enable_looping">Songs will be available again after playing
+    </string>
+    <string name="key_loop_switch">key_loop_switch</string>
+
+    <string name="pref_title_minimize_pause">Pause music when minimized</string>
+    <string name="key_minimize_pause">key_minimize_pause</string>
+
+    <string name="pref_title_headset_pause">Pause music when headset is disconnected</string>
+    <string name="key_headset_pause">key_headset_pause</string>
+
+    <string name="pref_title_sort_songs">Sort songs by</string>
+    <string name="key_song_sort_list">key_song_sort_list</string>
+    <string-array name="pref_sort_list_titles">
+        <item>Album</item>
+        <item>Artist</item>
+        <item>Name</item>
+    </string-array>
+    <string-array name="pref_sort_list_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string name="pref_backup_title">Backup ratings</string>
+    <string name="pref_default_backup_fileName">ratings_backup</string>
+    <string name="key_backup_dialog">key_backup_dialog</string>
+
+    <string name="reset_ratings_title">Reset song ratings</string>
+    <string name="reset_ratings_dialog_text">Selecting ok will reset all the ratings for your songs and overwrite the persistent ratings file</string>
+
+    <string name="pref_version_title">Version</string>
+    <string name="pref_version_summary">0.0.1</string>
+
+</resources>
