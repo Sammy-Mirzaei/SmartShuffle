@@ -58,7 +58,7 @@ public class SettingsFragment extends PreferenceFragment implements SharedPrefer
 
         //sort songs by
         if (key.matches(getString(R.string.key_song_sort_list))) {
-            //Toast.makeText(super.getActivity(), "changed", Toast.LENGTH_SHORT).show();
+            Toast.makeText(super.getActivity(), "app has to be restarted for this change to take place", Toast.LENGTH_SHORT).show();
             ListPreference listPreference = (ListPreference) findPreference(key);
             String value = listPreference.getEntries()[Integer.valueOf(sharedPreferences.getString(key, ""))].toString();
             listPreference.setSummary(value);
